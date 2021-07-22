@@ -1,0 +1,27 @@
+#title{
+    text-align:center;
+    font-size: 2rem;
+    color: coral;
+    font-weight: 900;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+#title:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#description{
+    color:rgb(95, 47, 30);
+    margin-top:2rem;
+    text-align: center;
+    font-weight:900;
+    width:50%;
+    margin-left:25%;
+    background-color: rgb(240, 240, 240);
+    padding:1rem;
+    border-radius: 10px;
+    border:rgb(95, 47, 30) 1px solid;
+}
