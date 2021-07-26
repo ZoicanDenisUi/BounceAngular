@@ -1,9 +1,6 @@
-import { R3TargetBinder } from '@angular/compiler';
-import { AfterViewInit, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Component } from '@angular/core';
-import { Circle } from './DomClasses/circle';
-import { DomInteractionsService } from './DomClasses/dom-interactions.service';
-import { MathHelperService } from './Helpers/math-helper.service';
+import { Subject } from 'rxjs';
+import { Round } from './HelpingClasses/round';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +8,8 @@ import { MathHelperService } from './Helpers/math-helper.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
+
+    roundObserver:Subject<Round> = new Subject<Round>() ;
 
     readonly bounceAnimation = [
         {color: 'coral'},

@@ -1,7 +1,16 @@
 <div id="ballCountDiv">
     <label id="ballCountLabel">How many balls? </label>
-    <input type="number" #ballCountInput id="ballCountInput">
+    <input type="number" [(ngModel)]='ballCountInput' id="ballCountInput">
 </div>
 <button id="startButton" (click)="animateBalls($event)">Bounce</button>
+<div id="roundInfoDiv">
+    <div id="progressDiv">
+    <mat-progress-bar id="progressBar"  mode="determinate" [value]="progressValue"></mat-progress-bar>
+    </div>
+    <div id="infoDiv">
+        <label id="ballsCountLabel">{{!isStartButtonEnable?ballClickedCount:"-"}} / {{!isStartButtonEnable?ballCountInput:"-"}}</label> 
+        <label id="timeLabel"> {{!isStartButtonEnable?timeInSeconds:"-"}} </label>
+    </div>
+</div>
 <div #bounceDiv id="bounceDiv" ></div>
 

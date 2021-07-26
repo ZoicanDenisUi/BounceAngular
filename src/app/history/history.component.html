@@ -1,0 +1,16 @@
+<table id="historyTable">
+    <tr>
+      <th>No.</th>
+      <th>Balls</th>
+      <th>Cleared</th>
+      <th>Time</th>
+    </tr>
+    <tr *ngFor="let round of historyRounds">
+      <td>{{round.currentRound}}</td>
+      <td>{{round.ballsCount}}</td>
+      <td>{{round.ballsClicked}}</td>
+      <td>{{round.timeInSeconds}}</td>
+    </tr>
+  </table>
+
+  
