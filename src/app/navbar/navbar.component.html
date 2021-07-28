@@ -1,0 +1,8 @@
+<mat-toolbar color="primary" id="navbar">
+    <div id="logo" ><img id="logoImage" src=".../../../../assets/media/logo.png"></div>
+    <div id="pagesDiv">
+        <label routerLink="/game" appExpandOnHover routerLinkActive="active">Home</label>
+        <label routerLink="/about" appExpandOnHover routerLinkActive="active">About</label>
+        <label (click)="showTop()" appExpandOnHover >Top</label>
+    </div>
+</mat-toolbar>

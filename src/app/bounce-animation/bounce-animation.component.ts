@@ -67,7 +67,7 @@ export class BounceAnimationComponent implements AfterViewInit{
         this.bounceInterval = setInterval(()=>{
             if(this.circlesElements.length == 0){
                 clearInterval(this.bounceInterval)
-
+                this.progressValue = 0
                 this.roundObserver.next(new Round(ballsNumber,this.ballClickedCount,this.timeInSeconds))
                 
                 this.isStartButtonEnable = !this.isStartButtonEnable
@@ -78,7 +78,7 @@ export class BounceAnimationComponent implements AfterViewInit{
             const heightBounceDiv = this.bounceDiv.nativeElement.offsetHeight
 
             const topBounceDiv = this.bounceDiv.nativeElement.offsetTop  //20
-            const leftBounceDiv = this.bounceDiv.nativeElement.offsetLeft//10
+            const leftBounceDiv = this.bounceDiv.nativeElement.offsetLeft //10
             const rightBounceDiv = leftBounceDiv+widthBounceDiv
             const bottomBounceDiv = topBounceDiv+heightBounceDiv
             

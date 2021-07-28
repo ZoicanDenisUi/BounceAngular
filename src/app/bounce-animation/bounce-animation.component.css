@@ -5,17 +5,7 @@
     width:4rem
 }
 
-#ballsCountLabel{
-    background-color: coral;
-    margin-right: 2rem;
-    font-size:2.5rem
-}
 
-#timeLabel{
-    background-color: coral;
-    font-size:2.5rem;
-    margin-right:5rem;
-}
 
 #bounceDiv{
     border:1px solid coral;
@@ -63,4 +53,28 @@
 #infoDiv{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    #infoDiv {
+      flex-direction: column;
+      align-items:center;
+      display: flex;
+    }
+
+    #timeLabel{
+        margin-top:1rem;
+    }    
+}
+
+#ballsCountLabel{
+    background-color: coral;
+    margin-right: 2rem;
+    font-size:2rem;
+}
+
+#timeLabel{
+    background-color: coral;
+    font-size:2rem;
+    margin-right:3rem;
 }

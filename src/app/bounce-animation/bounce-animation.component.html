@@ -5,7 +5,7 @@
 <button id="startButton" (click)="animateBalls($event)">Bounce</button>
 <div id="roundInfoDiv">
     <div id="progressDiv">
-    <mat-progress-bar id="progressBar"  mode="determinate" [value]="progressValue"></mat-progress-bar>
+        <mat-progress-bar id="progressBar"  mode="determinate" [value]="progressValue"></mat-progress-bar>
     </div>
     <div id="infoDiv">
         <label id="ballsCountLabel">{{!isStartButtonEnable?ballClickedCount:"-"}} / {{!isStartButtonEnable?ballCountInput:"-"}}</label> 
